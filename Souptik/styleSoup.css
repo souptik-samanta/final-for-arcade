@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #ffecd2 0%, #fcb69f 100%);
+  background-image: url("https://images.unsplash.com/photo-1671558967288-88edb7496e28?q=80&w=1632&auto=format&fit=crop");
+  background-size: cover;
+}
+
+.note {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 15px;
+  padding: 40px;
+  transform: rotateZ(-5deg);
+  box-shadow: 3px 10px 25px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 1;
+}
+.logo{ 
+	position:fixed; 
+	top:0; 
+	left:0; 
+
+} 
+.note.image {
+  padding: 30px;
+  border: 2px dashed #ff6f61;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.note.message {
+  background: rgba(255, 245, 200, 0.95);
+  padding: 50px;
+  border: 2px solid #ff6f61;
+}
+
+.note p {
+  font-family: 'Zeyada', cursive;
+  font-size: 1.8rem;
+  color: #ff6f61;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+#logo{ 
+	position:fixed; 
+	top:0; 
+	left:0; 
+} 
+img {
+  max-width: 100px;
+  border-radius: 15px;
+  
+}
+
+.center {
+  display: block;
+  margin: 10px auto;
+  border: 2px solid #ff6f61;
+}
+
+.highlight {
+  font-family: 'Homemade Apple', cursive;
+  font-size: 2.5rem;
+  color: #ff3b30;
+}
+body, .note {
+  touch-action: none; 
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Style for the top right button */
+.top-right-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #002;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.top-right-button:hover {
+  background-color: #005;
+}

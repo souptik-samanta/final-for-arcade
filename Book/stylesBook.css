@@ -1,0 +1,118 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../imgbgmanga.png'); 
+  background-color: #64707a;
+  margin: 0;
+  position: relative;  
+  
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+  background-repeat: no-repeat; 
+}
+
+/* Top right button */
+.top-right-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #002;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.top-right-button:hover {
+  background-color: #005;
+}
+
+/* Book container */
+.book-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Book pages */
+.book {
+  width: 392px;
+  height: 698px;
+  position: relative;
+}
+
+.page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+.page img {
+  width: 100%;
+  height: 100%;
+  object-fit: relative;
+}
+
+/* Arrow controls */
+.arrow {
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 0 20px;
+  user-select: none;
+}
+
+#left-arrow {
+  display: none; /* Hide the left arrow on the first page */
+}
+
+/* Box container for the Astro and Klumey buttons */
+.box-container {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box {
+  width: 180px;
+  height: 80px;
+  background-color: #4A154B;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box:hover {
+  background-color: #7F3B8A;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+  transform: scale(1.1);
+  z-index: 100;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+  .arrow {
+      font-size: 2rem;
+  }
+}

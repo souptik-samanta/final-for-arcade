@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By Souptik for The Reviewers ❤️</title>
+    <link rel="stylesheet" href="HomeStyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box" onclick="showLoaderAndRedirect('Souptik/indexSoup.html')">
+            <h3>By Souptik for The Reviewers ❤️</h3>
+            <img src="./imgth.jpeg" alt="Image 1" height="720" width="480">
+        </div>
+        <div class="box" onclick="showLoaderAndRedirect('Book/indexBook.html')">
+            <h3>Manga</h3>
+            <img src="./galary/img/img6.png" alt="Image 2">
+        </div>
+        <div class="box" onclick="showLoaderAndRedirect('./galary/gallery.html')">
+            <h3>Artwork for reviewers</h3>
+            <img src="./galary/img/img3.png" alt="Image 3" height="480" width="720">
+        </div>
+    </div>
+
+    <div id="loader" class="loader" style="display: none;">
+        <label>Redirecting...</label>
+        <div class="loading"></div>
+    </div>
+
+    <!-- People who contributed section -->
+    <div class="contributors">
+        <h4>People who contributed:</h4>
+        <ul>
+            <li><strong><a href="https://hackclub.slack.com/team/U07E4196AMA">Souptik Samanta :</a></strong> Website + Thank You message</li>
+            <li><strong><a href="https://hackclub.slack.com/team/U07EY4D1VGB">Tylar :</a> </strong> Manga</li>
+            <li><strong><a href="https://hackclub.slack.com/team/U07E36E9QKG">Klumey :</a></strong> Manga cover + Artworks</li>
+            <li><strong><a href="./index.html">Astro :</a></strong> Artworks</li>
+        </ul>
+    </div>
+    <style>
+        a:link {
+          color: rgb(33, 204, 33);
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:visited {
+          color: rgb(228, 22, 217);
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:hover {
+          color: red;
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        
+        a:active {
+          color: rgb(25, 77, 218);
+          background-color: transparent;
+          text-decoration: underline;
+        }
+        </style>
+    <script src="scriptRedirect.js"></script>
+    <script src="../security.js"></script> <!-- For Security reasons -->
+</body>
+</html>

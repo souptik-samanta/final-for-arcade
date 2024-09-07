@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button class="top-right-button" onclick="redirectToHome()">Go to Main Page</button>
+
+    <div class="box-container">
+        <div class="box" id="astro" onclick="redirectAstro()">
+            First two are By Astro 
+            
+        </div>
+        <div class="box" id="klumey" onclick="redirectKlumey()">
+            Last three are by Klumey 
+            Her Slack
+        </div>
+    </div>
+
+    <div id="gallery-container"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+    <script src="./redirect.js"></script> <!-- For redirecting -->
+    <script src="../security.js"></script> <!-- For Security reasons -->
+</body>
+</html>
